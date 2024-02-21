@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto; 
+}
+
+header .container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header {
+  background-color: rgb(62, 62, 241);
+}
+
+header h1 {
+  font-style: italic;
+  font-weight: bold;
+  color: #fff;
+  padding: 16px 0;
+}
+
+header nav li {
+  list-style: none;
+  float: left;
+  justify-content: space-between;
+  padding: 16px;
+  font-weight: bold;
+  position: relative;
+}
+
+.clear {
+  clear: both;
+}
+
+header nav li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+section img {
+  max-width: 100%;
+}
+
+.descricao-loja {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.descricao-loja h2 {
+  color: rgb(62, 62, 241);
+  padding-bottom: 16px;
+  border-bottom: 2px solid rgb(62, 62, 241);
+  font-style: italic;
+}
+
+.descricao-loja p {
+  font-size: 1em;
+  padding-top: 42px;
+  text-align: justify;
+}
+
+.descricao-loja img {
+  margin-right: 32px;
+  margin-top: 32px;
+  margin-bottom: 46px;
+}
+
+
+.produtos-loja h2 {
+  color: rgb(62, 62, 241);
+  padding-bottom: 16px;
+  border-bottom: 2px solid rgb(62, 62, 241);
+  font-style: italic;
+}
+
+.produtos {
+  display: grid;
+  grid-template-columns: 23.5% 23.5% 23.5% 23.5%;
+  column-gap: 2%;
+  padding-top: 36px;
+}
+
+article a {
+  text-decoration: none;
+}
+
+article p {
+  color: black;
+}
+
+article h3 {
+  color: black;
+  font-weight: bold;
+  font-size: 1.5em;
+  padding-bottom: 15px;
+}
+
+article button {
+  background-color: rgb(62, 62, 241);
+  color: #fff;
+  height: 20px;
+  border-radius: 3px;
+  border: none;
+  width: 220px;
+  height: 30px;
+  margin-top: 17px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 640px) {
+  
+  .container {
+    max-width: 90%;
+  }
+
+  .descricao-loja {
+    display: block;
+    align-items: center;
+  }
+  
+  .descricao-loja h2 {
+    padding-bottom: 16px;
+    font-style: italic;
+  }
+  
+  .descricao-loja p {
+    font-size: 1em;
+    padding-top: 42px;
+    text-align: left;
+    padding-bottom: 28px;
+  }
+  
+  .descricao-loja img {
+    margin-top: 40px;
+    margin-bottom: 46px;
+    width: 100%;
+  }
+
+  .produtos {
+    display: block;
+    padding-top: 36px;
+  }
+
+  article button {
+    height: 20px;
+    border-radius: 3px;
+    width: 335px;
+    height: 38px;
+    margin-top: 17px;
+    margin-bottom: 44px;
+  }
+
+  article  img, p, h3, button{ 
+    width: 100%;
+  }
+
+  header nav li {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+  .container {
+    max-width: 90%;
+  }
+
+  .descricao-loja {
+    display: block;
+    align-items: center;
+  }
+
+  .descricao-loja img {
+    margin-top: 40px;
+    margin-bottom: 46px;
+    width: 100%;
+  }
+
+  .descricao-loja p {
+    font-size: 1.5em;
+    padding-top: 42px;
+    text-align: left;
+    padding-bottom: 70px;
+  }
+
+  .produtos {
+    display: grid;
+    grid-template-columns: 49.5% 49.5%;
+    column-gap: 1%;
+    padding-top: 36px;
+  }
+
+  article  img, p, h3, button{ 
+    width: 100%;
+  }
+
+  article p {
+    font-size: 1.5em;
+  }
+
+  article h3 {
+    font-size: 1.8em;
+  }
+
+  article button {
+    height: 20px;
+    border-radius: 3px;
+    width: 350px;
+    height: 38px;
+    margin-top: 17px;
+    margin-bottom: 44px;
+    font-size: 1.5em;
+  }
+
+  header nav li {
+   font-size: 1.3em;
+
+  }
+}
