@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+section {
+  padding-top: 60px;
+  margin-left: 50px;
+}
+
+section h2 {
+  margin-bottom: 18px;
+  font-size: 36px;
+  color: #5d1f5f;
+  font-weight: bold;
+}
+
+
+button  {
+  width: 100%;
+  padding: 8px 0; 
+  display: block;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  max-width: 160px;
+  margin-top: 30px; 
+  background-color: #742977;
+  color: #fff;
+}
+
+.form-cadastro {
+  margin-bottom: 16px;
+}
+
+.form-cadastro input {
+  width: 100%;
+  display: block;
+  max-width: 450px;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.form-cadastro label {
+  font-weight: bold;
+  display: block;
+}
+
+form {
+  max-width: 1024px;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
