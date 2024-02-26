@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.descricao-londres {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.conteudo {
+  display: grid;
+  grid-template-columns: 32.6% 32.6% 32.6%;
+  column-gap: 2%;
+  padding-top: 36px;
+}
+
+@media screen and (max-width: 640px) {
+
+  .conteudo {
+    display: block;
+    
+  }
+
+  .card {
+    margin-bottom: 30px;
+  }
+
+  .descricao-londres {
+    display: block;
+  }
+
+  .descricao-londres img {
+    width: 100%;
+  }
+
+  .descricao-sobre {
+    margin-left: 10px;
+    text-align: justify;
+    font: 0.5em;
+    border-bottom: 2px solid rgb(21, 21, 22);
+  }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+
+
+  .conteudo {
+    display: grid;
+    grid-template-columns: 49.5% 49.5%;
+    column-gap: 1%;
+    padding-top: 36px;
+  }
+
+  .descricao-londres {
+    display: block;
+  }
+
+  .card {
+    margin-bottom: 30px;
+  }
+
+}
